@@ -1,0 +1,34 @@
+.carousel-item img{
+    width: 100vw;
+    height: 85vh;
+    object-fit: cover;
+    object-position: center;
+}
+
+.calbum-imgol img{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
+}
+
+.album-img{
+    width: 100%;
+}
+
+.plan-specif {
+    list-style-type:lower-greek ;
+}
+
+.package-card:hover {
+    background-color: rgb(33, 133, 214);
+    padding: 0px 10px;
+    transform: translateY(-50px);
+    border-radius: 20px;
+}
+
+
+.app-store img{
+    max-width: 150px;
+    
+}
