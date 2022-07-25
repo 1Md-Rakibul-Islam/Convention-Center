@@ -32,3 +32,10 @@
     max-width: 150px;
     
 }
+
+@media screen and (max-width: 766px) {
+    .footer-contents{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
