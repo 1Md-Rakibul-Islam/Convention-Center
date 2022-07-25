@@ -110,11 +110,21 @@
     <!-- album section start -->
     <section id="album">
       <div class="container my-5">
-        <div class="row py-5">
+        <div class="row position-relative py-5">
+          <div class="toast border-5 border-primary position-absolute top-50 end-0 shadow align-items-center" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="d-flex">
+              <div class="toast-body">
+                <img src="assets/icons/Vector.svg" alt="">
+                20% off on next booking
+              </div>
+              <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+          </div>
           <div class="col-12 col-md-6 album-img">
             <img class="album-img img-fluid rounded-4" src="assets/images/moment-1.jpg" alt="">
           </div>
           <div class="col-12 col-md-6 my-auto">
+
             <h1>Every moment is Precious</h1>
             <p>
               Amet minim mollit non deserunt ullamco est sit aliqua dolor
@@ -173,9 +183,11 @@
             </div>
           </div>
           <div class="col">
-            <div class="card package-card d-grid justify-content-center border-0">
+            
+            <div class="card position-relative package-card d-grid justify-content-center border-0">
+              <span class="bg-danger position-absolute top-0 end-0 badge py-2 px-3 rounded-pill">Hot</span>
               <div class="card-body">
-                <h2 class="card-title">$1200</h2>
+                <h2 class="card-title">$800</h2>
                 <h3 class="card-title">Corporate event</h3>
                 <p class="card-text">
                   For most corporate business events
@@ -194,7 +206,7 @@
           <div class="col">
             <div class="card package-card d-grid justify-content-center border-0">
               <div class="card-body">
-                <h2 class="card-title">$300</h2>
+                <h2 class="card-title">$1200</h2>
                 <h3 class="card-title">Business fair</h3>
                 <p class="card-text">
                   For most businesses event like book fair, craft fair.
@@ -352,7 +364,13 @@
 
     <!-- footer end -->
 
-
+    <script>
+      window.onload = (e) => {
+        let myToast = document.querySelector(".toast");
+        let bsToast = new bootstrap.Toast(myToast);
+        bsToast.show();
+      };
+    </script>
     <script src="assets/js/bootstrap.min.js"></script>
 </body>
 </html>
